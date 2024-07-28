@@ -4,13 +4,13 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import Home from './Components/Home';
 import About from './Components/About';
 import NotFound from './Components/NotFound';
-
-
+import Navigation from './Components/Navigation';
 
 function App() {
   return (
     <div className="App">
       <Router>
+      <Navigation />
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
